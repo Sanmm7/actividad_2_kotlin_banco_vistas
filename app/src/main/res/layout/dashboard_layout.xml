@@ -1,0 +1,79 @@
+<!-- dashboard_layout.xml -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".DashboardActivity">
+
+    <TextView
+        android:id="@+id/tvSaldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Saldo: $5000"
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnTransferir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSaldo"
+        android:layout_marginTop="20dp"
+        android:text="Transferir"
+        android:textSize="16sp"
+        android:background="#2196F3"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <Button
+        android:id="@+id/btnRetirar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnTransferir"
+        android:layout_marginTop="20dp"
+        android:text="Retirar"
+        android:textSize="16sp"
+        android:background="#2196F3"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <Button
+        android:id="@+id/btnRecargar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRetirar"
+        android:layout_marginTop="20dp"
+        android:text="Recargar"
+        android:textSize="16sp"
+        android:background="#4CAF50"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRetirar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="20dp"
+        android:background="#FF0000"
+        android:padding="10dp"
+        android:text="Cerrar Sesión"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+</RelativeLayout>
